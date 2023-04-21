@@ -2,15 +2,17 @@ const title = document.getElementById('title');
 const hiddenElements = document.querySelectorAll('.hidden');
 const hiddenMembers = document.querySelectorAll('.member-hidden');
 
-function titleClicked() {
+// Function to animate title
+function animateTitle() {
   title.classList.add('clicked');
   setTimeout(() => title.classList.remove('clicked'), 3000);
 }
-// animate title on page load...
-document.addEventListener('DOMContentLoaded', titleClicked);
 
-//... and when title is clicked
-title.addEventListener('click', titleClicked);
+// Run the function on page load
+animateTitle();
+
+// Run the function again on title click
+title.addEventListener('click', animateTitle);
 
 // animation effect on all section elements
 const observer = new IntersectionObserver((entries) => {
