@@ -111,18 +111,19 @@ footer {
   transition-delay: 800ms;
 }
 
-/* side menu */
+/* slide menu */
 
 #menu {
   position: fixed;
   top: 0;
   left: -300px;
-  width: 270px;
+  width: 260px;
   height: 100%;
   transition: left 0.3s;
   display: flex;
   align-items: center;
   border-right: 2px solid rgba(85, 85, 85, 0.3);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 }
 
 #menu.open {
